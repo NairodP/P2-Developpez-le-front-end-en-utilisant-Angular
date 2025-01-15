@@ -48,6 +48,7 @@ export class HomeComponent implements OnInit {
 
         // Calcul des médailles par pays
         const medalsByCountry = this.olympicService.getTotalMedalsByCountry(olympics);
+        
 
         this.chartOptions = {
           chart: {
@@ -55,9 +56,7 @@ export class HomeComponent implements OnInit {
             style: {
               fontFamily: "Montserrat"
             },
-            events: {
-              // Pas d'événement click sur le graphique directement
-            },
+            margin: [0, 0, 0, 0],      // Supprime les marges internes
           },
           title: {
             text: '',
@@ -87,6 +86,7 @@ export class HomeComponent implements OnInit {
           },
           plotOptions: {
             pie: {
+              center: ['50%', '50%'],
               allowPointSelect: false,
               cursor: 'pointer',
               dataLabels: {
@@ -120,7 +120,7 @@ export class HomeComponent implements OnInit {
               colorByPoint: true,
               data: medalsByCountry.map((item) => ({
                 name: item.country,
-                y: item.medals,
+                y: isNaN(item.medals) ? 0 : item.medals,
               })),
             },
           ] as any,

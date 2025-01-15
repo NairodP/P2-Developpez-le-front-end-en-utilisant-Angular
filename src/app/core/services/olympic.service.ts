@@ -31,7 +31,7 @@ export class OlympicService {
   getTotalMedalsByCountry(olympics: Olympic[]): { country: string; medals: number }[] {
     return olympics.map(olympic => ({
       country: olympic.country,
-      medals: olympic.participations.reduce((total, p) => total + p.medalsCount, 0)
+      medals: olympic.participations.reduce((total, p) => total + (p.medalsCount || 0), 0)
     }));
   }
 

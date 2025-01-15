@@ -12,6 +12,8 @@ h1 {
 .statistics {
   padding: 20px;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   gap: 20px;
 
   .stat-item {
@@ -29,5 +31,10 @@ h1 {
       font-weight: bold;
       color: black;
     }
+  }
+}
+@media (max-width: 768px) {
+  .statistics {
+    flex-direction: column;
   }
 }
