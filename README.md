@@ -30,6 +30,11 @@ J'y ai ajouté :
   et 
   - `models` qui contient les interfaces TypeScript utilisées pour structurer les données
 
+La récupération de données* se fait grâce à la bibliothèque RxJS qui était déjà installée dans l'achitecture du projet.
+RxJS (Reactive Extensions for JavaScript) est une bibliothèque qui permet de gérer les flux asynchrones de manière réactive en utilisant des observables, facilitant ainsi la gestion des événements, des appels API et des manipulations de données dans des applications Angular.
+
+*ici les données sont présentes en local dans le dossier `mock`sous un format JSON
+
 ## Pour conclure
 
 Ce projet propose une approche structurée pour gérer les données des Jeux Olympiques précédents et les visualiser de manière interactive pour offrir une expérience utilisateur fluide.
