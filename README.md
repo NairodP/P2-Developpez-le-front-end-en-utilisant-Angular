@@ -1,29 +1,37 @@
 # OlympicGamesStarter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
+Ce projet est une application web basée sur Angular permettant de visualiser de manière interactive des données des Jeux Olympiques précédents. L'application est composée de deux pages principales : une page d'accueil (ou dashboard) et une page de détail, accessible en cliquant sur un pays.
 
-Don't forget to install your node_modules before starting (`npm install`).
+Il a été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
 
-## Development server
+Avant de commencer, n'oubliez pas d'installer les node_modules avec (`npm install`).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Serveur de développement
+
+Exécutez `ng serve` pour démarrer un serveur de développement. Rendez-vous sur `http://localhost:4200/`. L'application se rechargera automatiquement si vous apportez des modifications aux fichiers sources.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Exécutez `ng build` pour build le projet. Les fichiers générés seront stockés dans le dossier `dist/`.
 
-## Where to start
+## Pour comprendre
 
-As you can see, an architecture has already been defined for the project. It is just a suggestion, you can choose to use your own. The predefined architecture includes (in addition to the default angular architecture) the following:
+une architecture était déjà définie pour le projet sous cette forme :
 
-- `components` folder: contains every reusable components
-- `pages` folder: contains components used for routing
-- `core` folder: contains the business logic (`services` and `models` folders)
+- Dossier `pages` : contient les composants utilisés pour le routage
+- Dossier `core` : contient la logique métier (dossiers `services` et `models`)
 
-I suggest you to start by understanding this starter code. Pay an extra attention to the `app-routing.module.ts` and the `olympic.service.ts`.
+J'y ai ajouté :
 
-Once mastered, you should continue by creating the typescript interfaces inside the `models` folder. As you can see I already created two files corresponding to the data included inside the `olympic.json`. With your interfaces, improve the code by replacing every `any` by the corresponding interface.
+- Dossier `components` : contient tous les composants réutilisables
+- Page `Detail`qui avait été imaginée dans les maquettes mais pas encore créée dans le code
+- Rempli les dossiers ->
+  - `services` qui contient les services qui gèrent les appels API et la logique des données
+  et 
+  - `models` qui contient les interfaces TypeScript utilisées pour structurer les données
 
-You're now ready to implement the requested features.
+## Pour conclure
 
-Good luck!
+Ce projet propose une approche structurée pour gérer les données des Jeux Olympiques précédents et les visualiser de manière interactive pour offrir une expérience utilisateur fluide.
+
+### Dorian PERNOT ###
