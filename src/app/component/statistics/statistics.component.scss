@@ -1,0 +1,33 @@
+h1 {
+  text-align: center; 
+  padding: 10px;
+  margin: 0 auto;
+  display: inline-block;
+  background-color: #26838e;
+  color: #F3F8F9;
+  border-radius: 8px;
+  font-weight: 300;
+}
+
+.statistics {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+
+  .stat-item {
+    color: #7e7e7e;
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 9px;
+    border: 2px solid #26838e;
+
+    p {
+      margin: 0;
+    }
+
+    .bold {
+      font-weight: bold;
+      color: black;
+    }
+  }
+}

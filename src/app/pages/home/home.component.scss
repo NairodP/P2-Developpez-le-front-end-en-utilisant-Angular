@@ -1,0 +1,27 @@
+.home-container {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  
+  .chart-container {
+    text-align: center;
+  }
+  
+  
+  .pie-chart {
+    margin: 20px 0;
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+

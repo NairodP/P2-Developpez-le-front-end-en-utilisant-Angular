@@ -1,0 +1,42 @@
+.detail-container {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .chart-container {
+    text-align: center;
+  }
+
+  .error {
+    color: red;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+.header {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  .btn-back {
+    padding: 8px 16px;
+    border: 2px solid #26838e;
+    background: none;
+    color: #26838e;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+
+    &:hover {
+      background: #26838e;
+      color: white;
+    }
+  }
+}
