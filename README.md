@@ -41,4 +41,6 @@ RxJS (Reactive Extensions for JavaScript) est une bibliothèque qui permet de g�
 
 Ce projet propose une approche structurée pour gérer les données des Jeux Olympiques précédents et les visualiser de manière interactive pour offrir une expérience utilisateur fluide.
 
-### Dorian PERNOT ###
+--
+
+### Ce projet a été forké depuis un repo de Openclassrooms dans le cadre de la prépararion au diplôme de développeur Full-Stack - Java et Angular. Dorian PERNOT ###
