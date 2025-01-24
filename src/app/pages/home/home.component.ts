@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
 
   statistics: Statistic[] = [];
 
-  // Highcharts
+  // Highcharts init
   Highcharts: typeof Highcharts = Highcharts;
   chartOptions: Highcharts.Options = {};
   updateFlag = false;
@@ -56,13 +56,13 @@ export class HomeComponent implements OnInit {
             style: {
               fontFamily: "Montserrat"
             },
-            margin: [0, 0, 0, 0],      // Supprime les marges internes
+            margin: [0, 0, 0, 0], // Supp marges internes
           },
           title: {
             text: '',
           },
           credits: {
-            enabled: false, // Désactive les crédits
+            enabled: false, // Désactive crédits
           },
           tooltip: {
             useHTML: true,
